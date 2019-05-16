@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1202</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TokenMark.io Desktop</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res/icons.qrc">
+    <normaloff>:/icons/app.png</normaloff>:/icons/app.png</iconset>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1202</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>TokenMark.io</string>
+    </property>
+    <addaction name="actionMenuAbout"/>
+    <addaction name="separator"/>
+    <addaction name="actionMenuExit"/>
+   </widget>
+   <widget class="QMenu" name="menuMining">
+    <property name="title">
+     <string>Mining</string>
+    </property>
+    <addaction name="actionMenuMiningNicehash"/>
+   </widget>
+   <widget class="QMenu" name="menuWallets_2">
+    <property name="title">
+     <string>Wallets</string>
+    </property>
+    <addaction name="actionWalletsConfigure"/>
+    <addaction name="actionWalletsBalance"/>
+   </widget>
+   <widget class="QMenu" name="menuAdmin">
+    <property name="title">
+     <string>Admin</string>
+    </property>
+    <addaction name="actionMenuAdminAccounts"/>
+   </widget>
+   <widget class="QMenu" name="menuViews">
+    <property name="title">
+     <string>Views</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuExplorers">
+    <property name="title">
+     <string>Explorers</string>
+    </property>
+    <addaction name="actionBitcoinBlockExplorer"/>
+   </widget>
+   <addaction name="menuWallets_2"/>
+   <addaction name="menuMining"/>
+   <addaction name="menuAdmin"/>
+   <addaction name="menuViews"/>
+   <addaction name="menuExplorers"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionMenuAbout">
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/icons/common/info.png</normaloff>:/icons/common/info.png</iconset>
+   </property>
+   <property name="text">
+    <string>About tokenMark.io...</string>
+   </property>
+   <property name="toolTip">
+    <string>About cryptogrid</string>
+   </property>
+  </action>
+  <action name="actionMenuMiningNicehash">
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/icons/nicehash.png</normaloff>:/icons/nicehash.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nicehash</string>
+   </property>
+  </action>
+  <action name="actionAssetsSummary">
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/icons/assets.png</normaloff>:/icons/assets.png</iconset>
+   </property>
+   <property name="text">
+    <string>Balances</string>
+   </property>
+  </action>
+  <action name="actionConfigure_wallets">
+   <property name="text">
+    <string>Configure wallets...</string>
+   </property>
+  </action>
+  <action name="actionMenuExit">
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/icons/common/exit.png</normaloff>:/icons/common/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionExchangeConfigureApiKeys">
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/icons/common/ssl.png</normaloff>:/icons/common/ssl.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configure exchanges keys...</string>
+   </property>
+  </action>
+  <action name="actionConfigure_wallets_2">
+   <property name="text">
+    <string>Configure wallets...</string>
+   </property>
+  </action>
+  <action name="actionExchangeBinanceLiveView">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/binance.png</normaloff>:/icons/binance.png</iconset>
+   </property>
+   <property name="text">
+    <string>Binance</string>
+   </property>
+  </action>
+  <action name="actionChangeStyleLight">
+   <property name="text">
+    <string>Light</string>
+   </property>
+  </action>
+  <action name="actionChangeStyleDark">
+   <property name="text">
+    <string>Dark</string>
+   </property>
+  </action>
+  <action name="actionWalletsConfigure">
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/icons/common/ssl.png</normaloff>:/icons/common/ssl.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configure...</string>
+   </property>
+  </action>
+  <action name="actionWalletsBalance">
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/icons/assets.png</normaloff>:/icons/assets.png</iconset>
+   </property>
+   <property name="text">
+    <string>Balances</string>
+   </property>
+  </action>
+  <action name="actionMenuAdminAccounts">
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/icons/admin/accounts.png</normaloff>:/icons/admin/accounts.png</iconset>
+   </property>
+   <property name="text">
+    <string>Accounts</string>
+   </property>
+  </action>
+  <action name="actionMenuViewsDashboard">
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/icons/dashboard.png</normaloff>:/icons/dashboard.png</iconset>
+   </property>
+   <property name="text">
+    <string>Dashboard</string>
+   </property>
+  </action>
+  <action name="actionBitcoinBlockExplorer">
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/icons/common/blocks.png</normaloff>:/icons/common/blocks.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bitcoin</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

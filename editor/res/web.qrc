@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>web/gmap.html</file>
+        <file>web/license.html</file>
+    </qresource>
+</RCC>

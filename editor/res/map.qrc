@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>map/pin.svg</file>
+        <file>map/pinShadow.svg</file>
+        <file>map/pinSelected.svg</file>
+        <file>map/toolTranslate.svg</file>
+        <file>map/toolSelect.svg</file>
+    </qresource>
+</RCC>

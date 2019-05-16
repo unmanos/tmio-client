@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/localization">
+        <file>editor_de.qm</file>
+        <file>editor_fr.qm</file>
+    </qresource>
+</RCC>

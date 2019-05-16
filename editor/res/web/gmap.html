@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+
+        var mapOptions = {
+           center: new google.maps.LatLng(40.5472,12.282715),
+           zoom: 6,
+           mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+        map = new google.maps.Map(document.getElementById('map'), mapOptions);
+      }
+
+google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, "resize", function() {
+ var center = map.getCenter();
+ google.maps.event.trigger(map, "resize");
+ map.setCenter(center);
+});
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6kuPzqIAxMaPrumbfc66MySoBzkyuVmw&callback=initMap"
+    async defer></script>
+  </body>
+</html>
